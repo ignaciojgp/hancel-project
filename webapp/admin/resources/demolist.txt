@@ -1,0 +1,6 @@
+{'contacto1':{'id':1, 'nombre':'con1','img':'avatar.jpg'},
+	'contacto2':{'id':2, 'nombre':'con2','img':'avatar2.jpg'},
+	'contacto3':{'id':3, 'nombre':'con3','img':'avatar.jpg'},
+	'contacto4':{'id':4, 'nombre':'con4','img':'avatar2.jpg'},
+	'contacto5':{'id':5, 'nombre':'con5','img':'avatar.jpg'},
+	'contacto6':{'id':6, 'nombre':'con6','img':'avatar2.jpg'}}

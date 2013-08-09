@@ -1,0 +1,572 @@
+body {
+	font-family:Arial, Sans-Serif, Helvetica;
+	margin:0;
+	font-size:14px;
+	color:white;
+}
+.wrapper {
+	position:fixed;
+	top:0;
+	right:0;
+	left:0;
+	bottom:0;
+}
+* {
+	margin:0;
+	padding:0;
+}
+/*---------------------- cabecera ----------------------*/
+
+h1 {
+	background:black;
+	color:white;
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	width:100%;
+}
+h1 a {
+	color:white;
+}
+h1 .logo {
+	display:block;
+	float:left;
+	width:220px;
+	text-align:center;
+}
+h1 .homeIco {
+	float:left;
+	width:32px;
+	height:32px;
+	background: url(../images/home.png) center no-repeat;
+	margin-top:5px;
+}
+h1 .homeIco span {
+	display:none;
+}
+h1 .logoutIco {
+	float:left;
+	width:32px;
+	height:32px;
+	background: url(../images/logout.png) center no-repeat;
+	margin-top:5px;
+}
+h1 .logoutIco span {
+	display:none;
+}
+h1 .search {
+	float:right;
+	background: url(../images/bgSearch.gif) right no-repeat;
+	width:196px;
+	height:28px;
+	padding-left:32px;
+	padding-top:3px;
+	margin:5px;
+}
+h1 .search input {
+	font-family:Arial;
+	font-size:14px;
+	padding:3px;
+	width:189px;
+	border:none;
+	background:none;
+	color:#ccc;
+}
+/*---------------------- columnas ----------------------*/
+
+
+.colIzq {
+	position:absolute;
+	width:220px;
+	left:0;
+	top:44px;
+	bottom:0;
+	background: #640000 url(../imagess/bgColIzq.jpg) top right no-repeat;
+}
+.colDer {
+	position:absolute;
+	left:220px;
+	right:0;
+	top:44px;
+	bottom:0;
+	background: #4c5969 url(../imagess/bgColDer.jpg) top left no-repeat;
+	overflow:hidden;
+}
+/*---------------------- columna Izquierda ----------------------*/
+.colIzq {
+	overflow:hidden;
+}
+.colIzq h3 {
+	color:#ff0000;
+	font-size:17px;
+	margin:20px;
+	border-bottom:#ff0000 solid 1px;
+	background: url(../images/bgLefth3.png) right bottom no-repeat;
+}
+.colIzq .shadow {
+	position:absolute;
+	right:0;
+	width:20px;
+	top:0;
+	bottom:0;
+}
+/*---------- usuarios -----------*/
+
+.colIzq .user {
+	background: url(../images/bgUser.png) bottom no-repeat;
+	overflow:hidden;
+	padding:10px;
+}
+.colIzq .user .avatar {
+	float:left;
+	margin-right:10px;
+}
+.colIzq .user p {
+	font-size:17px;
+	font-weight:bold;
+	padding-bottom:3px;
+}
+.colIzq .user p a {
+	font-size:12px;
+	color:white;
+	text-decoration:none;
+}
+.colIzq .user p a:hover {
+	text-decoration:underline;
+}
+/*---------- contactlist -----------*/
+
+.contactlist {
+}
+.contactlist ul li {
+	padding:15px;
+	overflow:hidden;
+}
+.contactlist ul li h4 {
+	float:right;
+	width:155px;
+	padding-top:0px;
+}
+.contactlist ul li a {
+	color:White;
+	text-decoration:none;
+}
+.contactlist ul li a:hover {
+	color:#C99;
+}
+.contactlist ul li span {
+	float:left;
+	-webkit-border-radius: 32px;
+	-moz-border-radius: 32px;
+	border-radius: 32px;
+	display:block;
+	overflow:hidden;
+	-webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 5px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 5px rgba(50, 50, 50, 0.75);
+}
+.colIzq .scrollPanel {
+	position:absolute;
+	top:66px;
+	bottom:0;
+	left:0;
+	right:0;
+	overflow-y:auto;
+	overflow-x:hidden;
+	z-index:20;
+	width:247px;
+}
+/*---------------------- columna derecha ----------------------*/
+
+/*---------- navegacion -----------*/
+.navigation {
+	list-style:none;
+	font-size:18px;
+	padding-top:5px;
+	height:34px;
+	overflow:hidden;
+	background:#2b343e url(../images/bgNav.png) 4px repeat-x;
+}
+.navigation li {
+	float:left;
+	width:30%;
+	text-align:center;
+	cursor:pointer;
+}
+.navigation li a {
+	color:white;
+	text-decoration:none;
+	display:block;
+}
+.navigation li a span {
+	display:block;
+	padding:7px;
+}
+.navigation .selected a {
+	background: url(../images/tab.png) top left no-repeat;
+	padding-left:15px;
+	font-weight:bold;
+}
+.navigation .selected a span {
+	background: url(../images/tab.png) top right no-repeat;
+	padding-right:15px;
+}
+/*---------- navegacion -----------*/
+.map {
+	position:absolute;
+	left:0;
+	right:0;
+	top:50px;
+	bottom:40%;
+	padding:20px;
+}
+.map iframe, .map .googlemap {
+	border:#ccc solid 1px;
+	width:100%;
+	margin:auto;
+	display:block;
+	height:100%;
+	background:white;
+	-webkit-box-shadow: 0px 1px 7px rgba(0, 0, 0, 1);
+	-moz-box-shadow:    0px 1px 7px rgba(0, 0, 0, 1);
+	box-shadow:         0px 1px 7px rgba(0, 0, 0, 1);
+}
+/*---------- navegacion -----------*/
+.values {
+	background:#050709;
+	position:absolute;
+	left:0;
+	right:0;
+	top:60%;
+	bottom:0;
+	overflow:hidden;
+	width:100%;
+}
+.block {
+	background:white;
+	color:#666;
+	margin:10px;
+	overflow:hidden;
+	position:absolute;
+	top:10px;
+	left:10px;
+	right:10px;
+	bottom:10px;
+	padding:10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.block h3 {
+	border-bottom:#B3B3B3 solid 1px;
+	font-size:15px;
+	padding:3px 0;
+	color:black;
+	position:absolute;
+	left:0;
+	padding-left:10px;
+	top:5px;
+	right:0;
+}
+.tracking {
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:50%;
+}
+.tracking .block {
+	right:0px;
+}
+.trackingList {
+	bottom: 25px;
+	left: 10px;
+	overflow: auto;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 30px;
+}
+.block .content {
+	bottom: 0;
+	left: 10px;
+	overflow: auto;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 30px;
+	padding-top:10px;
+}
+.trackingList li {
+	border-top: #B3B3B3 solid 1px;
+	color:black;
+	overflow:hidden;
+	position:relative;
+	min-height:35px;
+	padding-top:0px;
+}
+.trackingList li:first-child {
+	border-top: none;
+}
+.trackingList li h4 {
+	font-size:20px;
+	font-weight:bold;
+	position:absolute;
+	left:0;
+	padding-left:20px;
+	background:url(../images/flagTraking.png) left no-repeat;
+}
+.trackingList li.warning h4 {
+	background-image:url(../images/flagWarning.jpg);
+}
+.trackingList li.panic h4 {
+	background-image:url(../images/flagPanic.png);
+}
+.trackingList li h4 span {
+	font-size:10px;
+	display:block;
+}
+.trackingList li div {
+	text-align:center;
+	font-size:12px;
+	color:#666666;
+	padding-top:5px;
+}
+.trackingList li div strong {
+	font-size:17px;
+}
+.trackingList li .bateria {
+	position:absolute;
+	right:10px;
+	top:5px;
+}
+.Timging {
+	position:absolute;
+	top:0;
+	bottom:50%;
+	left:50%;
+	right:0;
+	overflow:hidden;
+}
+.Timging .block {
+	left:0px;
+	bottom:0px;
+}
+.fullBlock {
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	overflow:hidden;
+}
+.Timging .block {
+	left:0px;
+	bottom:0px;
+}
+.Distance {
+	position:absolute;
+	top:50%;
+	bottom:0;
+	left:50%;
+	right:0;
+	overflow:hidden;
+}
+.Distance .block {
+	left:0px;
+	top:0px;
+}
+.timingList {
+	overflow:hidden;
+}
+.timingList .content div {
+	float:left;
+	text-align:center;
+	width:50%;
+	font-weight:bold;
+	font-size:20px;
+	color:black;
+ margin-left:
+}
+.timingList div div {
+	width:auto;
+}
+.timingList div div span {
+	font-size:12px;
+}
+.timingList div h4 {
+	text-align:left;
+	padding:0;
+	margin:0;
+	font-size:12px;
+	font-weight:normal;
+	color:#666;
+}
+.loadScreen {
+	background:#000;
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	opacity:0.7;
+	display:none;
+}
+.loadScreen div {
+	text-align:center;
+	vertical-align:middle;
+	position:fixed;
+	width:100%;
+	top:50%;
+	color:white;
+}
+.searchForm {
+	overflow: hidden;
+	padding: 4px;
+	position: absolute;
+	top: 2px;
+	right: 10px;
+}
+.ongmensaje {
+	text-align:center;
+	font-size:30px;
+	color:#666;
+	padding:0 20%;
+	padding-top:30px;
+}
+.ongmensaje strong {
+	color:#900;
+}
+.claves {
+	position:absolute;
+	bottom:5px;
+	right:0px;
+	border-top: 1px solid #B3B3B3;
+	left:0px;
+	text-align:right;
+	padding-right:10px;
+	padding-top:3px;
+	height:15px;
+}
+.claves h4 {
+	display:inline;
+}
+.claves span {
+	display:inline-block;
+	padding-left:15px;
+	margin-left:10px;
+}
+.track_posicion {
+	background:url(../images/flagTraking.png) left no-repeat;
+}
+.track_alerta {
+	background:url(../images/flagWarning.jpg) left no-repeat;
+}
+.track_panico {
+	background:url(../images/flagPanic.png) left no-repeat;
+}
+.contactlist .cont {
+	padding:10px 10px 10px 20px;
+}
+.fulpanel {
+	background:white;
+	color:#666;
+	margin:10px;
+	overflow:hidden;
+	position:absolute;
+	top:40px;
+	left:10px;
+	right:10px;
+	bottom:10px;
+	padding:10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.fulpanel .content {
+	position:absolute;
+	top:30px;
+	left:0;
+	bottom:20px;
+	right:0px;
+	border-top:gray solid 1px;
+	border-bottom:gray solid 1px;
+	overflow:auto;
+	color:#666 !important;
+}
+.fulpanel h3 {
+	border-bottom: 1px solid #B3B3B3;
+	color: black;
+	font-size: 15px;
+	left: 0;
+	padding: 3px 0 3px 10px;
+	position: absolute;
+	right: 0;
+	top: 5px;
+}
+/*--------------------------------------- user list------------------------------------*/
+
+.userList {
+	color:#000;
+	width:100%;
+	border-collapse:collapse;
+}
+.userList td {
+	padding:5px;
+	border-left:none;
+	border-right:none;
+	border-bottom:none;
+	border-top:#ccc solid 1px;
+	font-size:14px;
+}
+.userList td h3 {
+	color:#000000;
+}
+.userList td strong {
+	font-size:10px;
+	display:block;
+	color:#666666;
+}
+.modal {
+	padding:10px 20px;
+}
+.modal table, .modal h3 {
+	color:#666666 !important;
+}
+.modal h3 {
+	font-size:30px;
+	margin-bottom:10px;
+}
+.button{
+	-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+text-decoration:none;
+color:white;
+
+padding:3px 10px;
+background: #a90329; /* Old browsers */
+
+background: -moz-linear-gradient(top,  #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+
+
+	}
+	
+.fulpanel h3 .button{
+	position:absolute;
+	top:0;
+	right:5px;
+	}

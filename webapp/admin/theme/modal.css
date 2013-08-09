@@ -1,0 +1,55 @@
+/* CSS Document */
+
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666666;
+	margin:0;
+	}
+.formularioONG{
+	width:100%;
+	}
+	
+.formularioONG input[type="text"], .formularioONG textarea{
+	width:400px;
+	}
+	
+
+h3{
+	color:#000;
+	border-bottom:gray solid 1px;
+	margin-bottom:20px;
+	padding-bottom:10px;
+	margin-top:0;
+	}
+h3 strong{
+	color:#CC0000;
+	}
+.button{
+	-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+border:none;
+
+padding:3px 10px;
+background: #a90329; /* Old browsers */
+
+background: -moz-linear-gradient(top,  #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+
+font-size:15px;
+
+	}

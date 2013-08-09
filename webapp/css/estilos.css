@@ -1,0 +1,404 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto|Ubuntu);
+
+body{
+    font-family:'Roboto', arial, helvetica, sans-serif;
+    color: #CCCCCC;
+    margin: 0;
+    text-align: justify;
+    font-size: 15.5px;
+	background: #343844;
+}
+
+img{border:none;}
+
+h1{
+    font-size:20px;
+    
+    text-align: center;
+    font-weight: normal;
+}
+h2{
+    text-align: center;
+    font-family: Ubuntu, Roboto, Arial;
+    font-size: 36px;
+    text-shadow: 0 1px 5px black;
+    color: white;
+}
+
+p{
+    margin-bottom: 0.7em;
+    margin-top: 0;
+}
+
+.c{
+    width: 580px;
+    margin: auto;
+	overflow:hidden;
+}
+
+
+.der{
+    float: left;
+    width: 50%;
+}
+.izq{
+    float: left;
+    width: 50%;
+}
+
+a{
+	color:#FFF;
+	}
+a:hover{
+	color:#F90;
+	}
+/*---------------------------   -----------------------------------*/
+
+
+.barra{
+    background: url(../images/bgBarra.png);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 5px;
+    text-align: right;
+}
+.barra ul{
+    margin: 0;
+    padding: 5px;
+    float: left;
+}
+
+.barra ul li{
+    display: inline;
+}
+.barra ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 20px;
+    font-size: 15px;
+}
+.barra ul li a:hover{
+    color: red;
+    
+}
+.twitterIco, .facebookIco, .googleIco{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url(../images/spriteRedes.png) no-repeat;
+    
+}
+.twitterIco{ background-position: 0 0;}
+.facebookIco{  background-position: -32px 0; }
+.googleIco{background-position: -64px 0; }
+
+.twitterIco:hover{background-position: 0 -32px;}
+.facebookIco:hover{background-position: -32px -32px;}
+.googleIco:hover{background-position: -64px -32px;}
+
+/*---------------------------   -----------------------------------*/
+
+
+.bRojo, .bRojo2, .bRojo3, .bGris1, .bGris2, .bGris3{
+    overflow: hidden;
+    
+}
+
+.bRojo{
+    background: #650103 url(../images/bgBRojo.jpg) center bottom no-repeat;
+    overflow: hidden;
+    box-shadow: inset 0 0 15px black;
+    padding-top: 64px;
+}
+
+.bRojo .der img{
+    margin-top: 50px;
+    
+}
+
+.bRojo .izq img{
+    
+    display: block;
+    margin: auto;
+    margin-bottom: -40px;
+    
+}
+
+/*---------------------------   -----------------------------------*/
+
+
+.bGris1 p:first-child{
+    font-size: 20px;
+    
+}
+
+.bGris1{
+    background: #343844 url(../images/bgBGris1.jpg) center bottom no-repeat;
+    padding-bottom: 20px;
+
+}
+
+/*---------------------------   -----------------------------------*/
+
+
+.bGris2{
+    background: #343844 url(../images/bgBGris1.jpg) center bottom no-repeat;
+    padding-bottom: 20px;
+}
+
+/*---------------------------   -----------------------------------*/
+
+
+.bRojo2{
+    background: #650103 url(../images/bgBRojo.jpg) center bottom no-repeat;
+    overflow: hidden;
+    box-shadow: inset 0 0 15px black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 18.3px;
+    color: white;
+}
+
+.bRojo2 p{
+    margin-top: 0;
+    text-align: center;
+}
+
+/*---------------------------   -----------------------------------*/
+
+.btnRegistro{
+    margin-top: 50px;
+    display: block;
+}
+
+.infoReg{
+    width: 254px;
+    margin-left: 5px;
+    padding-top: 20px;
+    
+}
+.infoRegEN{
+    width: 254px;
+    margin-left: 5px;
+    padding-top: 20px;
+    
+}
+
+.android{
+    margin-top: 40px;
+    
+}
+
+/*---------------------------   -----------------------------------*/
+
+
+.bRojo3{
+    background: #650103 url(../images/bgBRojo.jpg) center bottom no-repeat;
+    overflow: hidden;
+    box-shadow: inset 0 0 15px black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 18.3px;
+    color: white;
+}
+
+.bRojo3 iframe{
+    border:white solid 10px;
+    box-shadow: 0 0 15px black;
+	margin-bottom:50px;
+}
+
+/*---------------------------   -----------------------------------*/
+
+.bGris3{
+    background: #343844 url(../images/bgBGris1.jpg) center bottom no-repeat;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+
+.features{
+    display: inline-block;
+    width: 31%;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: top;
+    
+    
+    
+}
+.features p{
+    padding:0 10px;
+    
+}
+.icoFeat1, .icoFeat2, .icoFeat3, .icoFeat4, .icoFeat5{
+    width: 180px;
+    height: 180px;
+    background:  url(../images/features.png) no-repeat;
+
+}
+
+.icoFeat1{
+    background-position: 0 0;
+}
+
+.icoFeat2{
+    background-position: -180px 0;
+}
+
+.icoFeat3{
+    background-position: -360px 0;
+}
+
+.icoFeat4{
+    background-position: -540px 0;
+}
+
+.icoFeat5{
+    background-position: -720px 0;
+}
+
+.quienes p{
+    text-align:justify;
+    font-size:14px;
+}
+
+.quienes .aliados{
+	text-align: center;
+	}
+
+.faq{
+    font-size: 14px;
+    text-align: left;
+	overflow:visible;
+	margin-bottom:100px;
+}
+
+.faq ul li{
+    list-style-image: url(../images/bullet.png);
+	position:relative;
+	cursor:pointer;
+}
+
+.faq ul li:hover{
+    
+	color:#FF9900;
+	
+}
+
+.faq ul li div{
+    /*position:absolute;
+	bottom:10px;
+	left:50px;*/
+	font-size:12px;
+	padding:15px;
+	border-radius:5px;
+	box-shadow:0 5px 10px black;
+	color:#666666;
+	display:none;
+	
+	z-index:100;
+	
+	background: rgb(255,255,255); /* Old browsers */
+
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+
+
+	
+}
+
+.faq ul li div a{
+	color:#CC9900;
+}
+
+.secKnight{
+	margin-top:50px;
+	}
+.secKnight img{
+	width:100%;
+	}
+.knight{
+	font-size:21px;
+	}
+	
+
+/* -------------------------------------------- login --------------------------*/
+.login{
+	padding:50px 0;
+	}
+
+.login h1{
+	font-size:15px;
+}
+.login .izq{
+	width:30%;
+	}
+.login .izq img{
+	margin-bottom:-16px;
+}
+.login .izq span{
+	display:block;
+	padding:0 15px;
+	
+	}
+.login .der{
+	width:70%;
+	}
+
+.loginBox{
+	width:398px;
+	height:271px;
+	background:url(../images/bgLoginBox.png) top no-repeat;
+	margin:auto;
+}
+.loginBox label{
+	display:block;
+	padding:25px;
+	padding-bottom:0px;
+
+}
+	
+.loginBox label span{
+	display:block;
+
+	
+}
+.loginBox label input[type="text"], .loginBox label input[type="password"]{
+	width:308px;
+	background: url(../images/bgInputLogin.png) top no-repeat;
+	padding:12px 15px;
+	border:none;
+	color:#ededed;
+}
+
+.loginBox input[type="submit"]{
+	width:263px;
+	height:55px;
+	font-size:24px;
+	color:#FFFFFF;
+	text-align:center;
+	background:url(../images/bgLoginButton.png) center no-repeat;
+	margin:auto;
+	display:block;
+	border:none;
+	padding-bottom:10px;
+	margin-top:20px;
+	
+}
